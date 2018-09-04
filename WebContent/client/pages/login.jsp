@@ -1,0 +1,270 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon.png">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Login Page - Now UI Kit Pro by Creative Tim</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="./css/demo.css" rel="stylesheet" />
+</head>
+
+<body class="login-page">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top navbar-transparent" color-on-scroll="500">
+        <div class="container">
+            <div class="dropdown button-dropdown">
+                <a href="#pablo" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
+                    <span class="button-bar"></span>
+                    <span class="button-bar"></span>
+                    <span class="button-bar"></span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-header">Dropdown header</a>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">One more separated link</a>
+                </div>
+            </div>
+            <div class="navbar-translate">
+            	<c:url value="/client/index" var="index"/>
+                <a class="navbar-brand" href="${index}" rel="tooltip" title="Book Store" data-placement="bottom">
+                   	Book Store
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar2"></span>
+                    <span class="navbar-toggler-bar bar3"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" data-nav-image="./img/blurred-image-1.jpg" data-color="orange">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html" target="_blank">
+                            <i class="now-ui-icons design_app"></i>
+                            <p>Components</p>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">
+                            <i class="now-ui-icons files_paper" aria-hidden="true"></i>
+                            <p>Sections</p>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="../sections.html#headers">
+                                <i class="now-ui-icons shopping_box"></i> Headers
+                            </a>
+                            <a class="dropdown-item" href="../sections.html#features">
+                                <i class="now-ui-icons ui-2_settings-90"></i> Features
+                            </a>
+                            <a class="dropdown-item" href="../sections.html#blogs">
+                                <i class="now-ui-icons text_align-left"></i> Blogs
+                            </a>
+                            <a class="dropdown-item" href="../sections.html#teams">
+                                <i class="now-ui-icons sport_user-run"></i> Teams
+                            </a>
+                            <a class="dropdown-item" href="../sections.html#projects">
+                                <i class="now-ui-icons education_paper"></i> Projects
+                            </a>
+                            <a class="dropdown-item" href="../sections.html#pricing">
+                                <i class="now-ui-icons business_money-coins"></i> Pricing
+                            </a>
+                            <a class="dropdown-item" href="../sections.html#testimonials">
+                                <i class="now-ui-icons ui-2_chat-round"></i> Testimonials
+                            </a>
+                            <a class="dropdown-item" href="../sections.html#contactus">
+                                <i class="now-ui-icons tech_mobile"></i> Contact Us
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">
+                            <i class="now-ui-icons design_image" aria-hidden="true"></i>
+                            <p>Examples</p>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="../examples/about-us.html">
+                                <i class="now-ui-icons business_bulb-63"></i> About-us
+                            </a>
+                            <a class="dropdown-item" href="../examples/blog-post.html">
+                                <i class="now-ui-icons text_align-left"></i> Blog Post
+                            </a>
+                            <a class="dropdown-item" href="../examples/blog-posts.html">
+                                <i class="now-ui-icons design_bullet-list-67"></i> Blog Posts
+                            </a>
+                            <a class="dropdown-item" href="../examples/contact-us.html">
+                                <i class="now-ui-icons location_pin"></i> Contact Us
+                            </a>
+                            <a class="dropdown-item" href="../examples/landing-page.html">
+                                <i class="now-ui-icons education_paper"></i> Landing Page
+                            </a>
+                            <a class="dropdown-item" href="../examples/login-page.html">
+                                <i class="now-ui-icons users_circle-08"></i> Login Page
+                            </a>
+                            <a class="dropdown-item" href="../examples/pricing.html">
+                                <i class="now-ui-icons business_money-coins"></i> Pricing
+                            </a>
+                            <a class="dropdown-item" href="../examples/ecommerce.html">
+                                <i class="now-ui-icons shopping_shop"></i> Ecommerce Page
+                            </a>
+                            <a class="dropdown-item" href="../examples/product-page.html">
+                                <i class="now-ui-icons shopping_bag-16"></i> Product Page
+                            </a>
+                            <a class="dropdown-item" href="../examples/profile-page.html">
+                                <i class="now-ui-icons users_single-02"></i> Profile Page
+                            </a>
+                            <a class="dropdown-item" href="../examples/signup-page.html">
+                                <i class="now-ui-icons tech_mobile"></i> Signup Page
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary" href="https://www.creative-tim.com/product/now-ui-kit-pro" target="_blank">
+                            <p>Buy Now</p>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+					<a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
+						<i class="fa fa-twitter"></i>
+						<p class="hidden-lg-up">Twitter</p>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
+						<i class="fa fa-facebook-square"></i>
+						<p class="hidden-lg-up">Facebook</p>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
+						<i class="fa fa-instagram"></i>
+						<p class="hidden-lg-up">Instagram</p>
+					</a>
+				</li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="page-header" filter-color="orange">
+        <div class="page-header-image" style="background-image:url(./img/login.jpg)"></div>
+        <div class="content-center">
+            <div class="container">
+                <div class="col-md-4 content-center">
+                    <div class="card card-login card-plain">
+                    	<c:url value="/client/login" var="login"/>
+                        <form class="form" method="POST" action="${login}">
+                            <div class="card-header text-center">
+                                <div class="logo-container">
+                                    <img src="./img/now-logo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="input-group form-group-no-border input-lg">
+                                    <span class="input-group-addon">
+                                        <i class="now-ui-icons users_circle-08"></i>
+                                    </span>
+                                    <input type="text" name="username" class="form-control" placeholder="Tên đăng nhập...">
+                                </div>
+                                <div class="input-group form-group-no-border input-lg">
+                                    <span class="input-group-addon">
+                                        <i class="now-ui-icons ui-1_lock-circle-open"></i>
+                                    </span>
+                                    <input type="password" name="password" placeholder="Mật khẩu..." class="form-control" />
+                                </div>
+                            </div>
+                            <div class="card-footer text-center">
+                                <button type="submit" href="#pablo" class="btn btn-primary btn-round btn-lg btn-block">Đăng nhập</button>
+                            </div>
+                            <div class="pull-left">
+                                <h6>
+                                    <a href="#pablo" class="link footer-link">Tạo tài khoản</a>
+                                </h6>
+                            </div>
+                            <div class="pull-right">
+                                <h6>
+                                    <a href="#pablo" class="link footer-link">Quên mật khẩu?</a>
+                                </h6>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer ">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://www.creative-tim.com">
+                                Creative Tim
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://presentation.creative-tim.com">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://blog.creative-tim.com">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.creative-tim.com/license">
+                                License
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="copyright">
+                    &copy;
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>, Designed by
+                    <a href="http://www.invisionapp.com" target="_blank">Invision</a>. Coded by
+                    <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<!--   Core JS Files   -->
+<script src="./js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="./js/core/popper.min.js" type="text/javascript"></script>
+<script src="./js/core/bootstrap.min.js" type="text/javascript"></script>
+<script src="./js/plugins/moment.min.js"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="./js/plugins/bootstrap-switch.js"></script>
+<!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+<script src="./js/plugins/bootstrap-tagsinput.js"></script>
+<!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+<script src="./js/plugins/bootstrap-selectpicker.js" type="text/javascript"></script>
+<!--  Google Maps Plugin    -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+<script src="./js/plugins/jasny-bootstrap.min.js"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="./js/plugins/nouislider.min.js" type="text/javascript"></script>
+<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+<script src="./js/plugins/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+<!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+<script src="./js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
+
+</html>
